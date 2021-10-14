@@ -1,0 +1,58 @@
+[
+    {
+        "iconImg": "assets/img/rocketseat.png",
+        "course": "Curso Ignite - ReactJS",
+        "date": "20/09/2021 - ?",
+        "where":"https://www.rocketseat.com.br/ignite",
+        "about": "Parte de um pacote de cursos adquiridos por mim. A Rocketseat é referência no Brasil quando o assunto é Javascript."
+    },
+    {
+        "iconImg": "assets/img/ebac.png",
+        "course": "Profissão UX/UI Designer",
+        "date": "15/01/2021 - 20/05/2021",
+        "where":"https://ebaconline.com.br/uxui-designer",
+        "about": "Curso pago pelo meu então chefe afim de aprimorar o nível da equipe Fullstack a qual eu fazia parte."
+    },
+    {
+        "iconImg": "assets/img/alura.png",
+        "course": "Formação Arquiteto PHP",
+        "date": "25/06/2021 - 01/09/2021",
+        "where":"https://cursos.alura.com.br/formacao-arquiteto-php",
+        "about": "Formação com diversos cursos, pagos pelo meu então chefe afim de aprimorar meu conhecimento Backend."
+    },
+    {
+        "iconImg": "assets/img/alura.png",
+        "course": "Formação Node.js com Express",
+        "date": "13/09/2020 - 16/11/2020",
+        "where":"https://cursos.alura.com.br/formacao-node-js-12",
+        "about": "Curso feito na Alura por vontade própria afim de saber mais sobre NodeJS."
+    },
+    {
+        "iconImg": "assets/img/cisco.png",
+        "course": "Cybersecurity Essentials",
+        "date": "13/09/2021 - 01/10/2021",
+        "where":"https://www.netacad.com/pt-br/courses/cybersecurity/cybersecurity-essentials",
+        "about": "Curso feito por conta da paixão que tenho na área de segurança, quis ter um certificado disso."
+    },
+    {
+        "iconImg": "assets/img/fatec.png",
+        "course": "FATECINO - Arduino",
+        "date": "01/07/2020 - 01/12/2020",
+        "where":"http://www.fatecjd.edu.br/fatecino/",
+        "about": "Curso oferecido pela FATEC para alunos de outras federais."
+    },
+    {
+        "iconImg": "assets/img/fatec.png",
+        "course": "FATECINO - Python",
+        "date": "01/07/2020 - 01/12/2020",
+        "where":"http://www.fatecjd.edu.br/fatecino/",
+        "about": "Curso oferecido pela FATEC para alunos de outras federais."
+    },
+    {
+        "iconImg": "assets/img/youtube.png",
+        "course": "Diversos",
+        "date": "01/07/2020 - 01/12/2020",
+        "where":"https://www.youtube.com/",
+        "about": "Realizei muitos cursos via Youtube, pelo menos 1 de cada linguagem listada em 'linguagens'. Seria extensivo e desnecessário descrevê-los aqui."
+    }
+]

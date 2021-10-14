@@ -1,0 +1,47 @@
+/* -------------------------------------------------------
+                   
+-------------------------------------------------------- */
+.header-post {
+  position: relative;
+  padding-top: 200px;
+  margin-bottom: 120px;
+
+  h1 {
+    font-size: 62px;
+    letter-spacing: -2px;
+    font-weight: 900;
+    width: fit-content;
+    line-height: 1.4;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    span {
+      position: relative;
+      display: block;
+    }
+  }
+
+  .News-img-wrapper {
+    position: relative;
+    box-shadow: 15px 15px 30px rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+
+    &:before {
+      content: "";
+      width: 90%;
+      height: 60%;
+      position: absolute;
+      right: -25px;
+      bottom: -30px;
+      z-index: 0;
+      background: url(../img/dot-pattern.png) right;
+      background-size: 10px;
+      opacity: 0.2;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
