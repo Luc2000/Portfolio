@@ -37,6 +37,6 @@
                         </div>
                     </div>
                 </div>
-<script src="assets/js/work.js"></script>
+    <script src="assets/js/work.js"></script>
 <?php include 'inc/footer.php' ?>
             

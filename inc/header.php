@@ -47,7 +47,7 @@
             <div class="extend-container">
                 <div class="inner-header">
                     <div class="main-logo">
-                        <a href="index.php">
+                        <a href="work.php">
                             <div class="animate-svg">
                                 <svg x="0px" y="0px" viewBox="0 0 466 463" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M277.266 108.838C277.148 95.5451 272.455 90.8765 269 81C281.371 93.5972 290.16 100.684 303.971 112.635V340.404L339.5 307.5C339.578 305 339.578 305.5 339.578 301.81V267.012V247.5L365.012 273V289.156V314.5L269 410C274.341 401.011 276.135 395.321 277.266 384.06V108.838Z" 
@@ -71,7 +71,7 @@
                 <nav class=" accent-menu main-navigation">
                     <ul class="extend-container">
                         <li class="custom-drop-down">
-                            <a href="index.php">Competências e Trabalhos</a>
+                            <a href="work.php">Competências e Trabalhos</a>
                         </li>
                         <li>
                             <a href="sobre.php">Sobre mim</a>
@@ -84,7 +84,7 @@
         <div class="header-top header-top-hamburger">
             <div class="header-container">
                 <div class="logo main-logo">
-                    <a href="index.php">
+                    <a href="work.php">
                         <div class="animate-svg">
                             <svg x="0px" y="0px" viewBox="0 0 466 463" fill="none" xmlns="http://www.w3.org/2000/svg">
                             
