@@ -32,7 +32,7 @@
         <div class="preloader-after"></div>
         <div class="preloader-before"></div>
         <div class="preloader-block">
-            <div class="title">LucDev</div>
+            <div class="title">A.L</div>
             <div class="percent">0</div>
             <div class="loading">carregando...</div>
         </div>
