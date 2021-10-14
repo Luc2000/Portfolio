@@ -88,7 +88,7 @@
         <section class="contact-up section-margin section-padding">
           <div class="container">
             <div class="c-wapp">
-              <a href="work.php" class="effect-ajax">
+              <a href="index.php" class="effect-ajax">
                 <span class="hiring">
                   portfólio
                 </span>
