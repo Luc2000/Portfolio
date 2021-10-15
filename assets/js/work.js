@@ -21,7 +21,7 @@ function insertImages(data, id, name){
 
 
 function competencias(){
-    fetch("/assets/js/abilities.json")
+    fetch("abilities.json")
         .then(response => response.json())
         .then($('.projects-list').html(`<ul id="competencias_gerais" class="d-flex flex-wrap justify-content-between"></ul>`))
         .then(data => 
@@ -49,7 +49,7 @@ function competencias(){
 //      <a href="/front-end" target="_blank"><i class="fas fa-question-circle"></i><b> Mais detalhes</b></a>                                         
 // </div> 
 function languages(){
-    fetch("/assets/js/languages.json")
+    fetch("languages.json")
         .then(response => response.json())
         .then($('.projects-list').html(`<ul class="d-flex flex-wrap justify-content-between" id="languages"></ul>`))
         .then(data => 
@@ -150,7 +150,7 @@ function projects(){
 }
 
 function courses(){
-    fetch("/assets/js/courses.json")
+    fetch("courses.json")
         .then(response => response.json())
         .then($('.projects-list').html(`<ul id="cursos" class="d-flex flex-wrap justify-content-between"></ul>`))
         .then(data => 
