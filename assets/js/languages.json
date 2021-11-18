@@ -75,9 +75,18 @@
     "iconUrl":"https://xesque.rocketseat.dev/platform/tech/reactjs.svg",
     "name":"React JS",
     "ability": 80,
-    "experience":47,
-    "code":60,
-    "projects":4,
+    "experience":57,
+    "code":70,
+    "projects":5,
+    "status":0
+  },
+  {
+    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/nextjs.svg",
+    "name":"NextJS",
+    "ability": 70,
+    "experience":40,
+    "code":50,
+    "projects":5,
     "status":0
   },
   {
@@ -88,16 +97,7 @@
     "code":100,
     "projects":4,
     "status":0
-  },
-  {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/nextjs.svg",
-    "name":"NextJS",
-    "ability": 30,
-    "experience":30,
-    "code":50,
-    "projects":2,
-    "status":0
-  },
+  },  
   {
     "iconUrl":"https://xesque.rocketseat.dev/platform/tech/node.svg",
     "name":"Node JS",
