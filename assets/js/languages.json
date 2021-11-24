@@ -63,48 +63,48 @@
     "status":1
   },
   {
+    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/reactjs.svg",
+    "name":"React JS",
+    "ability": 80,
+    "experience":60,
+    "code":80,
+    "projects":"10+",
+    "status":1
+  },
+  {
+    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/nextjs.svg",
+    "name":"NextJS",
+    "ability": 70,
+    "experience":50,
+    "code":70,
+    "projects":"10+",
+    "status":1
+  },
+  {
+    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/typescript.svg",
+    "name":"TypeScript",
+    "ability": 70,
+    "experience":70,
+    "code":100,
+    "projects":5,
+    "status":0
+  },  
+  {
+    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/node.svg",
+    "name":"Node JS",
+    "ability": 50,
+    "experience":30,
+    "code":80,
+    "projects":3,
+    "status":0
+  },
+  {
     "iconUrl":"https://xesque.rocketseat.dev/platform/tech/postgresql.svg",
     "name":"PostgreSQL",
     "ability": 40,
     "experience":50,
     "code":80,
     "projects":5,
-    "status":0
-  },
-  {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/reactjs.svg",
-    "name":"React JS",
-    "ability": 80,
-    "experience":57,
-    "code":70,
-    "projects":5,
-    "status":0
-  },
-  {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/nextjs.svg",
-    "name":"NextJS",
-    "ability": 70,
-    "experience":40,
-    "code":50,
-    "projects":5,
-    "status":0
-  },
-  {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/typescript.svg",
-    "name":"TypeScript",
-    "ability": 70,
-    "experience":30,
-    "code":100,
-    "projects":4,
-    "status":0
-  },  
-  {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/node.svg",
-    "name":"Node JS",
-    "ability": 40,
-    "experience":30,
-    "code":80,
-    "projects":2,
     "status":0
   },
   {
