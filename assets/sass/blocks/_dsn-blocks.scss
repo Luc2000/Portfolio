@@ -88,7 +88,7 @@
     }
   }
 
-  p.dsn-active > .dsn-wrapper {
+  p.animation-active > .animation-wrapper {
     margin-right: 5px;
   }
 
@@ -141,12 +141,12 @@
       }
     }
 
-    .dsn-cat {
+    .animation-cat {
       text-align: center;
       margin-top: 30px;
     }
 
-    .dsn-link {
+    .animation-link {
       text-align: center;
       margin-top: 50px;
 
@@ -571,7 +571,7 @@
     }
   }
 
-  [data-dsn-grid="moveUp"] {
+  [data-animation-grid="moveUp"] {
     height: 100vh;
   }
 
@@ -626,7 +626,7 @@
     .mask-bg {
       display: none;
     }
-    [data-dsn-grid="moveUp"] {
+    [data-animation-grid="moveUp"] {
       height: 80vh;
     }
 
@@ -1009,8 +1009,8 @@
 //--------------  Blocks About -----------//
 //-------------------- Parallax Image --------------------//
 
-[data-dsn-grid="move-up"],
-[data-dsn-grid="moveUp"] {
+[data-animation-grid="move-up"],
+[data-animation-grid="moveUp"] {
   position: relative;
   margin: 0 auto;
   grid-area: 1 / 1 / 3 / 3;
@@ -1018,7 +1018,7 @@
   height: 80vh;
   transform-style: preserve-3d;
 
-  &.dsn-parallax-full {
+  &.animation-parallax-full {
     height: 100vh;
   }
 
@@ -1031,7 +1031,7 @@
     pointer-events: none;
     object-fit: cover;
 
-    &[data-dsn-scale="1"] {
+    &[data-animation-scale="1"] {
       transform: scale(1.3);
     }
 
@@ -1075,7 +1075,7 @@
         color: $body-color-light;
       }
 
-      &.dsn-active > .dsn-wrapper {
+      &.animation-active > .animation-wrapper {
         margin-right: 5px;
       }
     }
@@ -1219,13 +1219,13 @@
           font-size: 25px;
           line-height: 1.3;
 
-          &.dsn-active > .dsn-wrapper {
+          &.animation-active > .animation-wrapper {
             margin-right: 6px;
           }
         }
 
         p {
-          &.dsn-active > .dsn-wrapper {
+          &.animation-active > .animation-wrapper {
             line-height: 1.4;
           }
         }
@@ -1271,7 +1271,7 @@
     }
   }
 
-  .dsn-video {
+  .animation-video {
     position: relative;
     overflow: hidden;
   }
@@ -1316,7 +1316,7 @@
     }
   }
 
-  .dsn-v-text {
+  .animation-v-text {
     position: relative;
     overflow: hidden;
 
@@ -1363,7 +1363,7 @@
       line-height: 1.2;
       letter-spacing: 0.01em;
 
-      &.dsn-move-section:not([data-dsn-responsive]) {
+      &.animation-move-section:not([data-animation-responsive]) {
         position: relative;
         transform: translateY(40px);
         transition: none;
@@ -1436,7 +1436,7 @@
       margin-bottom: 30px;
       letter-spacing: 0.4px;
 
-      &[data-dsn-animate="animate"] > span {
+      &[data-animation-animate="animate"] > span {
         margin-right: 5px;
       }
     }
@@ -1729,7 +1729,7 @@
   position: relative;
   overflow: hidden;
 
-  &[data-dsn-col="2"] {
+  &[data-animation-col="2"] {
     margin-top: -20vh;
     @include media_991 {
       margin-top: $margin-padding-mobile;
@@ -1761,7 +1761,7 @@
       height: 100%;
       transition: transform 0.5s ease-in-out;
 
-      &[data-dsn-grid="moveUp"] img {
+      &[data-animation-grid="moveUp"] img {
         height: 120%;
       }
     }
@@ -2324,25 +2324,25 @@
   }
 }
 
-[data-dsn-animate="animate"] {
-  @include text-overlay-hide(0, 100, ".dsn-wrapper", ".dsn-word-wrapper");
+[data-animation-animate="animate"] {
+  @include text-overlay-hide(0, 100, ".animation-wrapper", ".animation-word-wrapper");
 
-  .dsn-word-wrapper {
+  .animation-word-wrapper {
     transform: translateY(50%) rotate(15deg) !important;
   }
 }
 
-.dsn-active[data-dsn-animate="animate"] {
-  @include text-overlay-show(0, 100, ".dsn-wrapper", ".dsn-word-wrapper", 25, $ease-back);
+.animation-active[data-animation-animate="animate"] {
+  @include text-overlay-show(0, 100, ".animation-wrapper", ".animation-word-wrapper", 25, $ease-back);
 
-  .dsn-word-wrapper {
+  .animation-word-wrapper {
     transform-origin: top left;
     transition-property: all !important;
     transform: none !important;
   }
 }
 
-[data-dsn-animate="up"] {
+[data-animation-animate="up"] {
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
@@ -2351,7 +2351,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.dsn-active[data-dsn-animate="up"] {
+.animation-active[data-animation-animate="up"] {
   transform: none;
   opacity: 1;
   visibility: visible;
@@ -2364,7 +2364,7 @@
   }
 }
 
-.our-news .slick-slider, .our-team .slick-slider, [data-dsn-col="2"] .slick-slider {
+.our-news .slick-slider, .our-team .slick-slider, [data-animation-col="2"] .slick-slider {
 
   @include media_400 {
     .slick-list {

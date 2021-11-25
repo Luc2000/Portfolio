@@ -5,7 +5,7 @@
     const wind = $(window);
     const body = $('body');
     const dataAttr = {
-        animateTextAjax: '.dsn-nav-bar , .headefr-fexid .project-title .title-text-header .cat ,[data-dsn-animate="ajax"] , footer' +
+        animateTextAjax: '.animation-nav-bar , .headefr-fexid .project-title .title-text-header .cat ,[data-animation-animate="ajax"] , footer' +
             ', .next-project , .root-project'
     };
 
@@ -32,7 +32,7 @@
         LoadingPage();
         SliderProject();
         slick_client(wind);
-        dsnAjax($off).ajaxLoad();
+        animationAjax($off).ajaxLoad();
         mouseCirMove($off);
         slidereProjects();
         Popup();
@@ -63,7 +63,7 @@
         var preloader_before = preloader.find('.preloader-before');
 
 
-        var timer = dsnGrid.pageLoad(0, 100, 300, function (val) {
+        var timer = animationGrid.pageLoad(0, 100, 300, function (val) {
             progress_number.text(val);
             preloader_progress.css('width', val + '%')
         });
@@ -101,10 +101,10 @@
 
 
     function changeColor() {
-        const $isLight = $('[data-dsn-temp="light"]');
+        const $isLight = $('[data-animation-temp="light"]');
         if ($isLight.length > 0) {
             body.addClass('v-light');
-            let head_p = $('[data-dsn-header="project"]');
+            let head_p = $('[data-animation-header="project"]');
             if (head_p.length <= 0)
                 body.addClass('menu-light');
             else if (head_p.hasClass('header-hero-2'))
@@ -126,7 +126,7 @@
         });
 
 
-        $(' .our-news .slick-slider , .our-team .slick-slider , [data-dsn-col="2"] .slick-slider').slick({
+        $(' .our-news .slick-slider , .our-team .slick-slider , [data-animation-col="2"] .slick-slider').slick({
             infinite: true,
             slidesToShow: 2,
             arrows: false,
@@ -145,7 +145,7 @@
         });
 
 
-        $('[data-dsn-col="3"] .slick-slider').slick({
+        $('[data-animation-col="3"] .slick-slider').slick({
             infinite: true,
             slidesToShow: 3,
             arrows: false,
@@ -198,8 +198,8 @@
      */
     function effectAnimate() {
         var controller = new ScrollMagic.Controller();
-        const eHeaderProject = '[data-dsn-header="project"]';
-        const eNextProject = '[data-dsn-footer="project"]';
+        const eHeaderProject = '[data-animation-header="project"]';
+        const eNextProject = '[data-animation-footer="project"]';
 
         return {
             clearControl: function () {
@@ -210,15 +210,15 @@
             },
             headerProject: function () {
                 if ($(eHeaderProject).length <= 0) return false;
-                let heroImg = $('#dsn-hero-parallax-img'),
-                    heroTitle = $('#dsn-hero-parallax-title'),
-                    fillTitle = $('#dsn-hero-parallax-fill-title'),
+                let heroImg = $('#animation-hero-parallax-img'),
+                    heroTitle = $('#animation-hero-parallax-title'),
+                    fillTitle = $('#animation-hero-parallax-fill-title'),
                     holder = $('#descover-holder'),
                     scale = 1.2;
 
 
                 if (heroImg.hasClass('parallax-move-element'))
-                    dsnGrid.parallaxMoveElemnt({
+                    animationGrid.parallaxMoveElemnt({
                         target: $(eHeaderProject),
                         element: heroImg.find('.cover-bg')
                     }, 5, 1);
@@ -253,7 +253,7 @@
                             force3D: true,
                             height: 80
                         }, 0)
-                        .to('#dsn-hero-parallax-fill-title h1', 1, {
+                        .to('#animation-hero-parallax-fill-title h1', 1, {
                             force3D: true,
                             top: 0
                         }, 0)
@@ -305,8 +305,8 @@
             },
             nextProject: function () {
 
-                let footerImg = $('#dsn-next-parallax-img'),
-                    footerTitle = $('#dsn-next-parallax-title');
+                let footerImg = $('#animation-next-parallax-img'),
+                    footerTitle = $('#animation-next-parallax-title');
 
                 let img = footImg();
                 let title = footTitle();
@@ -374,25 +374,25 @@
             },
 
             parallaxImg: function () {
-                const moveUp = $('[data-dsn-grid="move-up"]');
+                const moveUp = $('[data-animation-grid="move-up"]');
 
                 moveUp.each(function () {
                     let _that = $(this);
-                    _that.attr('data-dsn-grid', 'moveUp');
+                    _that.attr('data-animation-grid', 'moveUp');
                     let img = _that.find('img:not(.hidden) , video');
 
-                    let triggerHook = dsnGrid.getUndefinedVal(_that.data('dsn-triggerhook'), 1),
-                        duration = dsnGrid.getUndefinedVal(_that.data('dsn-duration'), (triggerHook !== 1) ? '100%' : '200%');
+                    let triggerHook = animationGrid.getUndefinedVal(_that.data('animation-triggerhook'), 1),
+                        duration = animationGrid.getUndefinedVal(_that.data('animation-duration'), (triggerHook !== 1) ? '100%' : '200%');
 
 
                     if (img.length > 0) {
                         var parallax;
                         if (img.hasClass('has-top-bottom')) {
-                            let pers = dsnGrid.getUndefinedVal(img.data('dsn-move'), '15%');
+                            let pers = animationGrid.getUndefinedVal(img.data('animation-move'), '15%');
                             parallax = TweenMax.to(img, 0.8, {force3D: true, y: pers, ease: Power0.easeNone});
                         } else {
-                            let y = dsnGrid.getUndefinedVal(img.data('dsn-y'), '10%');
-                            let scale = dsnGrid.getUndefinedVal(img.data('dsn-scale'), 1.1);
+                            let y = animationGrid.getUndefinedVal(img.data('animation-y'), '10%');
+                            let scale = animationGrid.getUndefinedVal(img.data('animation-scale'), 1.1);
 
                             if (triggerHook !== 1) {
                                 img.css('top', 0);
@@ -422,17 +422,17 @@
                 });
             },
             moveSection: function () {
-                const moveUp = $('[data-dsn-grid="move-section"]');
+                const moveUp = $('[data-animation-grid="move-section"]');
                 moveUp.each(function () {
                     let _that = $(this);
-                    _that.removeAttr('data-dsn-grid');
-                    _that.addClass('dsn-move-section');
-                    let move = dsnGrid.getUndefinedVal(_that.data('dsn-move'), -100);
-                    let triggerHook = dsnGrid.getUndefinedVal(_that.data('dsn-triggerhook'), 1);
-                    let opacity = dsnGrid.getUndefinedVal(_that.data('dsn-opacity'), _that.css('opacity'));
+                    _that.removeAttr('data-animation-grid');
+                    _that.addClass('animation-move-section');
+                    let move = animationGrid.getUndefinedVal(_that.data('animation-move'), -100);
+                    let triggerHook = animationGrid.getUndefinedVal(_that.data('animation-triggerhook'), 1);
+                    let opacity = animationGrid.getUndefinedVal(_that.data('animation-opacity'), _that.css('opacity'));
 
-                    let duration = dsnGrid.getUndefinedVal(_that.data('dsn-duration'), '150%');
-                    let resp = _that.data('dsn-responsive');
+                    let duration = animationGrid.getUndefinedVal(_that.data('animation-duration'), '150%');
+                    let resp = _that.data('animation-responsive');
 
                     if (resp === 'tablet' && wind.width() < 992) return;
 
@@ -452,21 +452,21 @@
                 });
             },
             parallaxImgHover: function () {
-                const parallax = $('[data-dsn="parallax"]');
+                const parallax = $('[data-animation="parallax"]');
                 if (parallax.length === 0 || wind.width() < 992) {
                     return;
                 }
                 parallax.each(function () {
                     var _that = $(this),
-                        dsn_grid = dsnGrid.removeAttr(_that, 'data-dsn'),
-                        speed = dsnGrid.removeAttr(_that, 'data-dsn-speed'),
-                        move = dsnGrid.removeAttr(_that, 'data-dsn-move'),
+                        animation_grid = animationGrid.removeAttr(_that, 'data-animation'),
+                        speed = animationGrid.removeAttr(_that, 'data-animation-speed'),
+                        move = animationGrid.removeAttr(_that, 'data-animation-move'),
                         scale = false;
 
                     if (_that.hasClass('image-zoom')) scale = true;
 
 
-                    dsnGrid.parallaxMoveElemnt(_that, move, speed, undefined, scale);
+                    animationGrid.parallaxMoveElemnt(_that, move, speed, undefined, scale);
 
                 });
             },
@@ -474,9 +474,9 @@
                 const v_b = 'v-light';
                 var isLight = body.hasClass(v_b);
 
-                $('[data-dsn="color"]').each(function () {
+                $('[data-animation="color"]').each(function () {
 
-                    let duration = dsnGrid.getUndefinedVal($(this).data('dsn-duration'), $(this).outerHeight() + 70);
+                    let duration = animationGrid.getUndefinedVal($(this).data('animation-duration'), $(this).outerHeight() + 70);
 
                     var parallaxIt = new ScrollMagic.Scene({
                         triggerElement: this,
@@ -505,13 +505,13 @@
                 });
             },
             animateText: function () {
-                const $element = $('[data-dsn-animate="text"] , [data-dsn-animate="up"]')
+                const $element = $('[data-animation-animate="text"] , [data-animation-animate="up"]')
                 $element.each(function () {
                     let _that = $(this);
                     let triggerHook = 1;
-                    if (_that.data('dsn-animate') === 'text') {
-                        dsnGrid.convertTextWord(_that, _that);
-                        _that.attr('data-dsn-animate', 'animate');
+                    if (_that.data('animation-animate') === 'text') {
+                        animationGrid.convertTextWord(_that, _that);
+                        _that.attr('data-animation-animate', 'animate');
                     } else
                         triggerHook = 0.8;
 
@@ -521,7 +521,7 @@
                         triggerHook: triggerHook,
 
                     })
-                        .setClassToggle(this, 'dsn-active')
+                        .setClassToggle(this, 'animation-active')
                         .addTo(controller);
                     effectScroll.getListener(function () {
                         parallaxIt.refresh();
@@ -530,7 +530,7 @@
 
             },
             headerBlog: function () {
-                const header_project = $('[data-dsn-header="blog"]');
+                const header_project = $('[data-animation-header="blog"]');
                 if (header_project.length <= 0 || wind.width() < 992) return;
 
 
@@ -574,7 +574,7 @@
     function effectScroller() {
         const Scrollbar = window.Scrollbar;
         const locked_scroll = 'locked-scroll';
-        var myScrollbar = document.querySelector('#dsn-scrollbar');
+        var myScrollbar = document.querySelector('#animation-scrollbar');
 
 
         return {
@@ -616,12 +616,12 @@
             },
             isScroller: function ($print) {
                 if ($print)
-                    myScrollbar = document.querySelector('#dsn-scrollbar');
+                    myScrollbar = document.querySelector('#animation-scrollbar');
 
 
-                let hasSc = !body.hasClass('dsn-effect-scroll') || this.isMobile() || myScrollbar === null;
+                let hasSc = !body.hasClass('animation-effect-scroll') || this.isMobile() || myScrollbar === null;
                 if (hasSc && $print) {
-                    body.addClass('dsn-mobile');
+                    body.addClass('animation-mobile');
                 }
 
                 return !hasSc;
@@ -639,7 +639,7 @@
                 body.removeClass(locked_scroll);
                 this.start();
                 animate.allInt();
-                dsnGrid.progressCircle(effectScroll);
+                animationGrid.progressCircle(effectScroll);
 
             },
             getScrollbar: function ($id) {
@@ -658,7 +658,7 @@
                 }
             },
             start: function () {
-                dsnGrid.scrollTop(0, 1);
+                animationGrid.scrollTop(0, 1);
                 $('.scroll-to').on('click', function (e) {
                     e.preventDefault();
                     let sc = wind;
@@ -702,7 +702,7 @@
             },
 
             sidebarScroll: function () {
-                const comment = document.querySelector('.dsn-sidebar .sidebar-single');
+                const comment = document.querySelector('.animation-sidebar .sidebar-single');
                 if (comment !== null)
                     Scrollbar.init(comment, {
                         damping: 0.05,
@@ -710,7 +710,7 @@
             },
 
             workScroll: function () {
-                const comment = document.querySelector('.dsn-all-work .dsn-work-scrollbar');
+                const comment = document.querySelector('.animation-all-work .animation-work-scrollbar');
                 if (comment !== null)
                     Scrollbar.init(comment, {
                         damping: 0.05,
@@ -723,22 +723,22 @@
     }
 
     function slider() {
-        const dsn_slider = $('.dsn-slider');
+        const animation_slider = $('.animation-slider');
         const speed = 1.2;
 
         return {
             initSlider: function () {
-                const slid_items = dsn_slider.find('.slide-item');
-                const dsn_slider_content = dsn_slider.find('.dsn-slider-content');
+                const slid_items = animation_slider.find('.slide-item');
+                const animation_slider_content = animation_slider.find('.animation-slider-content');
                 slid_items.each(function ($index) {
                     let $this = $(this);
-                    $this.attr('data-dsn-id', $index);
+                    $this.attr('data-animation-id', $index);
                     let slide_content = $(this).find('.slide-content');
-                    slide_content.attr('data-dsn-id', $index);
-                    if ($index === 0) slide_content.addClass('dsn-active dsn-active-cat');
-                    dsn_slider_content.append(slide_content);
+                    slide_content.attr('data-animation-id', $index);
+                    if ($index === 0) slide_content.addClass('animation-active animation-active-cat');
+                    animation_slider_content.append(slide_content);
                     let title = slide_content.find('.title-text-header-inner a');
-                    dsnGrid.convertTextLine(title, title);
+                    animationGrid.convertTextLine(title, title);
                 });
             },
             progress: function (swiper) {
@@ -762,28 +762,28 @@
                 function start() {
 
                     //--> Slider before change
-                    let contentOld = dsn_slider.find('.dsn-slider-content .dsn-active');
-                    let numOld = contentOld.data('dsn-id');
+                    let contentOld = animation_slider.find('.animation-slider-content .animation-active');
+                    let numOld = contentOld.data('animation-id');
 
                     //--> Slider current change
                     var slider = $(swiper.slides[swiper.activeIndex]);
 
-                    let id = slider.data('dsn-id');
+                    let id = slider.data('animation-id');
                     if (numOld === id) return;
-                    dsn_slider.find('[data-dsn="video"] video').each(function () {
+                    animation_slider.find('[data-animation="video"] video').each(function () {
                         this.pause();
                     });
-                    let v = $(this.slides[this.activeIndex]).find('[data-dsn="video"] video');
+                    let v = $(this.slides[this.activeIndex]).find('[data-animation="video"] video');
                     if (v.length > 0) v[0].play();
 
 
                     //--> Content Old
-                    let content_letterOld = contentOld.find('.dsn-chars-wrapper');
-                    contentOld.removeClass('dsn-active-cat');
+                    let content_letterOld = contentOld.find('.animation-chars-wrapper');
+                    contentOld.removeClass('animation-active-cat');
 
                     //--> Content New
-                    let contentNew = dsn_slider.find('.dsn-slider-content [data-dsn-id="' + id + '"]');
-                    let content_letterNew = contentNew.find('.dsn-chars-wrapper');
+                    let contentNew = animation_slider.find('.animation-slider-content [data-animation-id="' + id + '"]');
+                    let content_letterNew = contentNew.find('.animation-chars-wrapper');
 
 
                     let $isRight = numOld > id;
@@ -791,24 +791,24 @@
                     let tl = new TimelineLite();
 
                     tl.staggerFromTo(
-                        dsnGrid.randomObjectArray(content_letterOld, 0.3),
+                        animationGrid.randomObjectArray(content_letterOld, 0.3),
                         0.3,
                         $this.showText().title,
                         $this.hideText($isRight).title,
                         0.1,
                         0,
                         function () {
-                            dsn_slider.find('.dsn-slider-content .slide-content').removeClass('dsn-active');
-                            dsn_slider.find('.dsn-slider-content .slide-content').removeClass('dsn-active-cat');
+                            animation_slider.find('.animation-slider-content .slide-content').removeClass('animation-active');
+                            animation_slider.find('.animation-slider-content .slide-content').removeClass('animation-active-cat');
 
-                            contentNew.addClass('dsn-active');
-                            contentNew.addClass('dsn-active-cat');
+                            contentNew.addClass('animation-active');
+                            contentNew.addClass('animation-active-cat');
                         }
                     );
 
 
                     tl.staggerFromTo(
-                        dsnGrid.randomObjectArray(content_letterNew, speed),
+                        animationGrid.randomObjectArray(content_letterNew, speed),
                         speed,
                         $this.hideText($isRight).title,
                         $this.showText().title,
@@ -875,31 +875,31 @@
                 });
             },
             swiperObject: function () {
-                return new Swiper('.dsn-slider .slide-inner', {
+                return new Swiper('.animation-slider .slide-inner', {
                     speed: 1500,
                     allowTouchMove: true,
                     resistanceRatio: 0.65,
                     navigation: {
-                        nextEl: '.dsn-slider .control-nav .next-container',
-                        prevEl: '.dsn-slider .control-nav .prev-container',
+                        nextEl: '.animation-slider .control-nav .next-container',
+                        prevEl: '.animation-slider .control-nav .prev-container',
                     },
                     pagination: {
-                        el: '.dsn-slider .footer-slid .control-num span',
+                        el: '.animation-slider .footer-slid .control-num span',
                         type: 'custom',
                         clickable: true,
                         renderCustom: function (swiper, current, total) {
-                            return dsnGrid.numberText(current);
+                            return animationGrid.numberText(current);
                         }
                     },
                     on: {
                         init: function () {
                             this.autoplay.stop();
-                            dsn_slider.find('[data-dsn="video"] video').each(function () {
+                            animation_slider.find('[data-animation="video"] video').each(function () {
                                 this.pause();
                             });
                         },
                         imagesReady: function () {
-                            let v = $(this.slides[this.activeIndex]).find('[data-dsn="video"] video');
+                            let v = $(this.slides[this.activeIndex]).find('[data-animation="video"] video');
                             if (v.length > 0) v[0].play();
                         }
                     }
@@ -909,7 +909,7 @@
 
 
             run: function () {
-                if (dsn_slider.length <= 0) return;
+                if (animation_slider.length <= 0) return;
                 this.initSlider();
                 var swiper = this.swiperObject();
                 this.progress(swiper);
@@ -944,10 +944,10 @@
     function viewAllWork() {
         const $view = $('.view-all');
         if ($view.length <= 0) return;
-        const $classes = 'dsn-show-work',
-            $classes_active = 'dsn-active',
-            $classes_active_enter = 'dsn-active-enter',
-            $classes_active_leve = 'dsn-active-leve'
+        const $classes = 'animation-show-work',
+            $classes_active = 'animation-active',
+            $classes_active_enter = 'animation-active-enter',
+            $classes_active_leve = 'animation-active-leve'
         ;
 
         $view.on('click', function () {
@@ -961,11 +961,11 @@
 
         $Items.each(function ($index) {
             let _that = $(this);
-            _that.attr('data-dsn-id', $index);
+            _that.attr('data-animation-id', $index);
 
 
             let img = _that.find('img');
-            img.attr('data-dsn-id', $index);
+            img.attr('data-animation-id', $index);
             if (_that.hasClass($classes_active)) img.addClass($classes_active);
             $nav_box_img.append(img);
 
@@ -974,7 +974,7 @@
         $Items.on('mouseenter', function () {
 
             let $this = getObjectImg($(this));
-            if ($this.hasClass($classes_active) || body.hasClass('dsn-ajax-effect')) return;
+            if ($this.hasClass($classes_active) || body.hasClass('animation-ajax-effect')) return;
             $Items.removeClass($classes_active);
             $(this).addClass($classes_active);
 
@@ -990,25 +990,25 @@
         });
 
         function getObjectImg($this) {
-            let id = $this.data('dsn-id');
-            return $nav_box_img.find('img[data-dsn-id="' + id + '"]');
+            let id = $this.data('animation-id');
+            return $nav_box_img.find('img[data-animation-id="' + id + '"]');
         }
 
 
     }
 
-    function dsnAjax($off) {
+    function animationAjax($off) {
 
         const text_main_root = 'main.main-root';
-        const _classAnimate = 'dsn-effect-animate';
-        const text_e_img = '[data-dsn-ajax="img"]';
+        const _classAnimate = 'animation-effect-animate';
+        const text_e_img = '[data-animation-ajax="img"]';
         var isAjax = true;
 
         return {
             main_root: $(text_main_root),
             ajax_click: $('a.effect-ajax '),
             isEffectAjax: function () {
-                return !body.hasClass('dsn-ajax');
+                return !body.hasClass('animation-ajax');
             },
             ajaxLoad: function () {
                 var $parent = this;
@@ -1024,7 +1024,7 @@
 
                     var _that = $(this);
                     var url = _that.attr('href');
-                    var _type = _that.data('dsn-ajax');
+                    var _type = _that.data('animation-ajax');
                     if (url.indexOf('#') >= 0 || url === undefined) {
                         return;
                     }
@@ -1064,20 +1064,20 @@
 
                 let
                     active = $e.parents('.slide-content'),
-                    id = active.data('dsn-id'),
-                    img = $('.dsn-slider .slide-item[data-dsn-id="' + id + '"] .cover-bg').first();
+                    id = active.data('animation-id'),
+                    img = $('.animation-slider .slide-item[data-animation-id="' + id + '"] .cover-bg').first();
 
                 let _url = url;
                 if (_url !== undefined) {
 
-                    TweenMax.to('.project-metas , .nav-slider ,.footer-slid ,.view-all , .dsn-all-work ', 0.8, {
+                    TweenMax.to('.project-metas , .nav-slider ,.footer-slid ,.view-all , .animation-all-work ', 0.8, {
                         autoAlpha: 0,
                         scale: 0.8,
                         // y: 50,
                         onComplete: function () {
                             img.removeClass('hidden');
                             img.find('img').addClass('hidden');
-                            $parent.createElement(img, _url, $('.dsn-root-slider'));
+                            $parent.createElement(img, _url, $('.animation-root-slider'));
                         }
                     });
                 }
@@ -1088,7 +1088,7 @@
                 let $parent = this;
 
                 let
-                    img = $('.nav-work-img-box img.dsn-active').first();
+                    img = $('.nav-work-img-box img.animation-active').first();
 
 
                 let _url = url;
@@ -1098,7 +1098,7 @@
                         onComplete: function () {
                             $parent.createElement(img, _url);
                             setTimeout(function () {
-                                body.removeClass('dsn-show-work');
+                                body.removeClass('animation-show-work');
                             }, 1000);
 
                         }
@@ -1292,7 +1292,7 @@
                     transition: '',
                     objectFit: 'cover'
                 });
-                $section.css(dsnGrid.getBoundingClientRect($target[0]));
+                $section.css(animationGrid.getBoundingClientRect($target[0]));
                 container.append($section);
                 return $section;
             },
@@ -1331,7 +1331,7 @@
                     ease: Expo.easeIn,
                     onComplete: function () {
                         _that.loader(url, function () {
-                            dsnGrid.scrollTop(0, 1);
+                            animationGrid.scrollTop(0, 1);
                             effectScroller().unlocked();
                         });
                     }
@@ -1346,7 +1346,7 @@
 
             loader: function (url, callback) {
                 var _that = this;
-                body.removeClass('dsn-effect-animate');
+                body.removeClass('animation-effect-animate');
                 this.main_root.load(url + ' ' + text_main_root + ' > *', function (responseText, textStatus, jqXHR) {
                     var $elemnt = $(this);
                     _that.hideAnimate();
@@ -1393,7 +1393,7 @@
 
 
             ajaxNext: function ($e, url) {
-                var img_move = $('.dsn-imgs[data-dsn-next="blog"]');
+                var img_move = $('.animation-imgs[data-animation-next="blog"]');
                 var $parent = this;
                 if (img_move.length <= 0) {
                     $parent.ajaxNormal(url);
@@ -1407,7 +1407,7 @@
                     top: 0,
                     ease: Expo.easeInOut,
                     onComplete: function () {
-                        $('[data-dsn-header="blog"]').css('width', '100%');
+                        $('[data-animation-header="blog"]').css('width', '100%');
                         $parent.createElement(img_move, url);
                     }
                 });
@@ -1426,7 +1426,7 @@
                 }
             },
             ajaxLoaderElemnt: function ($isShow) {
-                var $class = 'dsn-ajax-effect';
+                var $class = 'animation-ajax-effect';
                 if ($isShow)
                     body.addClass($class);
                 else
@@ -1532,9 +1532,9 @@
         var text_close = text_menu.find('.text-close');
 
 
-        dsnGrid.convertTextWord(text_button, text_button, true);
-        dsnGrid.convertTextWord(text_open, text_open, true);
-        dsnGrid.convertTextWord(text_close, text_close, true);
+        animationGrid.convertTextWord(text_button, text_button, true);
+        animationGrid.convertTextWord(text_open, text_open, true);
+        animationGrid.convertTextWord(text_close, text_close, true);
 
 
     }
@@ -1547,10 +1547,10 @@
             return;
         }
 
-        if ($('body').hasClass('dsn-large-mobile'))
+        if ($('body').hasClass('animation-large-mobile'))
             return;
 
-        dsnGrid.mouseMove($elemnet, {
+        animationGrid.mouseMove($elemnet, {
             onComplete: function (event, element) {
                 if (!element.hasClass('effect-cursor')) {
                     element.addClass('effect-cursor');
@@ -1567,8 +1567,8 @@
         cursorEffect();
 
         function cursorEffect() {
-            dsnGrid.elementHover($elemnet, 'a , .to-prev , .to-next , .fas.fa-angle-right , .fas.fa-angle-left , .hero__down , .link-click , .filter-btn , .icon__fixed , .t-link , .button-next , .toggle , input', 'custom-cursor-link');
-            dsnGrid.elementHover($elemnet, '.dsn-video , .projs-item-img-container , .close-filters', 'hidden');
+            animationGrid.elementHover($elemnet, 'a , .to-prev , .to-next , .fas.fa-angle-right , .fas.fa-angle-left , .hero__down , .link-click , .filter-btn , .icon__fixed , .t-link , .button-next , .toggle , input', 'custom-cursor-link');
+            animationGrid.elementHover($elemnet, '.animation-video , .projs-item-img-container , .close-filters', 'hidden');
         }
 
 
@@ -1702,9 +1702,9 @@ function SliderProject() {
 function data_overlay() {
     $('[data-overlay-color]').each(function ($index) {
         var _that = $(this);
-        var _color = dsnGrid.removeAttr(_that, 'data-overlay-color');
-        _that.addClass('dsn-overlay-' + $index);
-        $('body').append('<style>.dsn-overlay-' + $index + '[data-overlay]:before{background: ' + _color + ';}</style>');
+        var _color = animationGrid.removeAttr(_that, 'data-overlay-color');
+        _that.addClass('animation-overlay-' + $index);
+        $('body').append('<style>.animation-overlay-' + $index + '[data-overlay]:before{background: ' + _color + ';}</style>');
     });
 }
 
@@ -1748,8 +1748,8 @@ function slick_client(wind) {
         });
 
         if (wind.width() > 991) {
-            dsnGrid.parallaxMoveElemnt(client_curs.find('.fas.fa-angle-right'), 25);
-            dsnGrid.parallaxMoveElemnt(client_curs.find('.fas.fa-angle-left'), 25);
+            animationGrid.parallaxMoveElemnt(client_curs.find('.fas.fa-angle-right'), 25);
+            animationGrid.parallaxMoveElemnt(client_curs.find('.fas.fa-angle-left'), 25);
         }
 
 
@@ -1820,9 +1820,9 @@ function initMap() {
     setTimeout(function () {
         try {
             var map_att = $('#map');
-            var lat = map_att.data('dsn-lat');
-            var leg = map_att.data('dsn-len');
-            var zoom = map_att.data('dsn-zoom');
+            var lat = map_att.data('animation-lat');
+            var leg = map_att.data('animation-len');
+            var zoom = map_att.data('animation-zoom');
 
             var letLeng = new google.maps.LatLng(lat, leg);
             var map = new google.maps.Map(map_id, {

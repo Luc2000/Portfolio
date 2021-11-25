@@ -123,13 +123,13 @@ $all: all .3s ease-in-out;
         padding-bottom: $space;
         margin: 0;
 
-        &.dsn-normalize-block {
+        &.animation-normalize-block {
           padding-top: 0;
           padding-bottom: 0;
           margin: $space 0;
         }
 
-        &:not(.dsn-normalize-block) {
+        &:not(.animation-normalize-block) {
           padding-top: 0;
         }
 
@@ -197,7 +197,7 @@ $all: all .3s ease-in-out;
 @mixin column-size($count: 0 , $offset : 25 , $mark : '%' ) {
 
   @for $i from 1 through $count {
-    [data-dsn-size="#{$i}"] {
+    [data-animation-size="#{$i}"] {
       width: ($i * $offset#{$mark});
     }
   }
@@ -208,7 +208,7 @@ $all: all .3s ease-in-out;
 @mixin column-grid($count: 0 , $mark : '%') {
 
   @for $i from 1 through $count {
-    [data-dsn-grid="#{$i}"] {
+    [data-animation-grid="#{$i}"] {
       width: (100 / $i)#{$mark};
     }
   }
@@ -275,7 +275,7 @@ $all: all .3s ease-in-out;
 
 }
 
-@mixin text-overlay-hide($dealy : 0 , $count : 100 , $parent : '.dsn-word-wrapper' , $sub : '.dsn-chars-wrapper' ,
+@mixin text-overlay-hide($dealy : 0 , $count : 100 , $parent : '.animation-word-wrapper' , $sub : '.animation-chars-wrapper' ,
 $num : 100 ,
   $transition : cubic-bezier(.31, 1.37, .68, -0.36)) {
 
@@ -295,13 +295,13 @@ $num : 100 ,
 
 @mixin text-overlay-show($dealy : 0 ,
 $count : 100 ,
-$parent : '.dsn-word-wrapper' ,
-$sub : '.dsn-chars-wrapper' ,
+$parent : '.animation-word-wrapper' ,
+$sub : '.animation-chars-wrapper' ,
 $num : 100 ,
 $transition : cubic-bezier(.31, 1.37, .68, -0.36) ,
   $out : true
 ) {
-  .dsn-wrapper {
+  .animation-wrapper {
     margin-right: 7px;
 
     &:last-child {

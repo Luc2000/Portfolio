@@ -1,4 +1,4 @@
-.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar, .sidebar-single , .dsn-work-scrollbar {
+.animation-effect-scroll:not(.animation-mobile) #animation-scrollbar, .sidebar-single , .animation-work-scrollbar {
   overflow: hidden;
   height: 100vh;
 
@@ -13,7 +13,7 @@
   }
 }
 
-.admin-bar.dsn-effect-scroll:not(.dsn-mobile) #dsn-scrollbar, .sidebar-single  , .dsn-work-scrollbar{
+.admin-bar.animation-effect-scroll:not(.animation-mobile) #animation-scrollbar, .sidebar-single  , .animation-work-scrollbar{
   $narrow-offset: 46px;
   $wide-offset: 32px;
   height: calc(100vh - #{$narrow-offset});
@@ -23,6 +23,6 @@
   }
 }
 
-.locked-scroll #dsn-scrollbar {
+.locked-scroll #animation-scrollbar {
   background-color: $bg-dark;
 }

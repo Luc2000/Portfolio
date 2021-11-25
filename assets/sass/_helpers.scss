@@ -621,14 +621,14 @@
   bottom: auto !important;
 }
 
-.dsn-video {
+.animation-video {
   object-fit: cover;
   z-index: -20 !important;
   width: 100%;
   height: 100%;
 }
 
-[data-dsn="video"] {
+[data-animation="video"] {
   width: 100%;
   height: 100%;
 }

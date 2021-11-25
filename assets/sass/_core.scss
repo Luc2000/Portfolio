@@ -5,7 +5,7 @@ body {
   background-color: $bg-dark;
   overflow: hidden;
 
-  &.dsn-mobile {
+  &.animation-mobile {
     overflow-y: auto;
   }
 
@@ -45,8 +45,8 @@ body {
 .main-root,
 .gallery-col .box-im,
 .box-gallery-vertical .mask-bg,
-.dsn-all-work,
-.dsn-all-work .content,
+.animation-all-work,
+.animation-all-work .content,
 .nav .inner,
 .nav-content .inner-content {
   &:before {
@@ -456,7 +456,7 @@ $margin-padding-mobile: 80px;
 
 //-------------------- Parallax Image --------------------//
 
-[data-dsn-grid="move-up"] {
+[data-animation-grid="move-up"] {
   height: 80vh;
   overflow: hidden;
 
@@ -466,7 +466,7 @@ $margin-padding-mobile: 80px;
 }
 
 //-------------------- icon fixed top --------------------//
-[data-dsn-grid="progress-circle"] {
+[data-animation-grid="progress-circle"] {
   position: fixed;
   right: 20px;
   bottom: 30px;
@@ -478,7 +478,7 @@ $margin-padding-mobile: 80px;
     stroke-width: 2px;
   }
 
-  .dsn-grid-parallax {
+  .animation-grid-parallax {
     svg {
       height: 40px;
       width: 40px;
@@ -544,7 +544,7 @@ $margin-padding-mobile: 80px;
   z-index: 999;
   display: none;
 
-  .dsn-ajax-effect & {
+  .animation-ajax-effect & {
     display: block;
   }
 
@@ -575,7 +575,7 @@ $margin-padding-mobile: 80px;
     }
 
     .loader-circle {
-      .dsn-ajax-effect & {
+      .animation-ajax-effect & {
         animation-name: loading;
         animation-duration: 0.8s;
         animation-timing-function: linear;
@@ -651,10 +651,10 @@ $margin-padding-mobile: 80px;
   }
 }
 
-.dsn-word-wrapper {
+.animation-word-wrapper {
   display: inline-block;
 
-  .dsn-chars-wrapper {
+  .animation-chars-wrapper {
     display: inline-block;
   }
 }

@@ -9,7 +9,7 @@ body.hamburger-menu {
 }
 
 @mixin showTextMenu() {
-  @include text-overlay-show(0, 4, ".dsn-word-wrapper", ".dsn-chars-wrapper", 20, ease-in-out, false);
+  @include text-overlay-show(0, 4, ".animation-word-wrapper", ".animation-chars-wrapper", 20, ease-in-out, false);
 }
 
 /* -------------------------------------------------------
@@ -27,7 +27,7 @@ $transition--length: 0.8;
 /* -------------------------------------------------------
                    Navbar Overlay
 -------------------------------------------------------- */
-.dsn-nav-bar {
+.animation-nav-bar {
   position: absolute;
   z-index: 999;
   width: 100%;
@@ -562,7 +562,7 @@ body.nav-active {
   width: max-content;
 }
 
-.dsn-nav-bar {
+.animation-nav-bar {
   @include text-overlay-hide(0, 1, ".icon-m", ".menu-icon-close");
   @include text-overlay-show(0, 3, ".icon-m", ".menu-icon__line");
 
