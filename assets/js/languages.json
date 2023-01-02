@@ -1,155 +1,155 @@
 [
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/html5.svg",
-    "name":"HTML 5",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/html5.svg",
+    "name": "HTML 5",
     "ability": 100,
-    "experience":100,
-    "code":100,
-    "projects":"50+",
-    "status":1
+    "experience": 100,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/php.svg",
-    "name":"PHP",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/php.svg",
+    "name": "PHP",
     "ability": 70,
-    "experience":80,
-    "code":100,
-    "projects":"20+",
-    "status":1
+    "experience": 80,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/css3.svg",
-    "name":"CSS3",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/css3.svg",
+    "name": "CSS3",
     "ability": 100,
-    "experience":100,
-    "code":100,
-    "projects":"50+",
-    "status":1
+    "experience": 100,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/bootstrap.svg",
-    "name":"Bootstrap",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/bootstrap.svg",
+    "name": "Bootstrap",
     "ability": 90,
-    "experience":90,
-    "code":100,
-    "projects":"30+",
-    "status":1
+    "experience": 90,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/javascript.svg",
-    "name":"Javascript",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/javascript.svg",
+    "name": "Javascript",
     "ability": 85,
-    "experience":80,
-    "code":100,
-    "projects":"50+",
-    "status":1
+    "experience": 80,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/jquery.svg",
-    "name":"JQuery",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/jquery.svg",
+    "name": "JQuery",
     "ability": 90,
-    "experience":95,
-    "code":100,
-    "projects":"50+",
-    "status":1
+    "experience": 95,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/mysql.svg",
-    "name":"MySQL",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/mysql.svg",
+    "name": "MySQL",
     "ability": 95,
-    "experience":100,
-    "code":100,
-    "projects":"50+",
-    "status":1
+    "experience": 100,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/reactjs.svg",
-    "name":"React JS",
-    "ability": 80,
-    "experience":60,
-    "code":80,
-    "projects":"10+",
-    "status":1
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/reactjs.svg",
+    "name": "React JS",
+    "ability": 90,
+    "experience": 90,
+    "code": 90,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/nextjs.svg",
-    "name":"NextJS",
-    "ability": 70,
-    "experience":50,
-    "code":70,
-    "projects":"10+",
-    "status":1
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/nextjs.svg",
+    "name": "NextJS",
+    "ability": 90,
+    "experience": 90,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/typescript.svg",
-    "name":"TypeScript",
-    "ability": 70,
-    "experience":70,
-    "code":100,
-    "projects":5,
-    "status":0
-  },  
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/typescript.svg",
+    "name": "TypeScript",
+    "ability": 100,
+    "experience": 100,
+    "code": 100,
+    "projects": "30+",
+    "status": 1
+  },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/node.svg",
-    "name":"Node JS",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/node.svg",
+    "name": "Node JS",
     "ability": 50,
-    "experience":30,
-    "code":80,
-    "projects":3,
-    "status":0
+    "experience": 30,
+    "code": 80,
+    "projects": "30+",
+    "status": 0
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/postgresql.svg",
-    "name":"PostgreSQL",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/postgresql.svg",
+    "name": "PostgreSQL",
     "ability": 40,
-    "experience":50,
-    "code":80,
-    "projects":5,
-    "status":0
+    "experience": 50,
+    "code": 80,
+    "projects": 5,
+    "status": 0
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/aws.svg",
-    "name":"AWS",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/aws.svg",
+    "name": "AWS",
     "ability": 30,
-    "experience":30,
-    "code":20,
-    "projects":1,
-    "status":0
+    "experience": 30,
+    "code": 20,
+    "projects": 1,
+    "status": 0
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/java.svg",
-    "name":"Java",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/java.svg",
+    "name": "Java",
     "ability": 50,
-    "experience":30,
-    "code":70,
-    "projects":3,
-    "status":2
+    "experience": 30,
+    "code": 70,
+    "projects": 3,
+    "status": 2
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/cplusplus.svg",
-    "name":"C++",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/cplusplus.svg",
+    "name": "C++",
     "ability": 70,
-    "experience":60,
-    "code":80,
-    "projects":"5+",
-    "status":2
+    "experience": 60,
+    "code": 80,
+    "projects": "5+",
+    "status": 2
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/c.svg",
-    "name":"C",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/c.svg",
+    "name": "C",
     "ability": 80,
-    "experience":80,
-    "code":100,
-    "projects":"10+",
-    "status":2
+    "experience": 80,
+    "code": 100,
+    "projects": "10+",
+    "status": 2
   },
   {
-    "iconUrl":"https://xesque.rocketseat.dev/platform/tech/python.svg",
-    "name":"Python",
+    "iconUrl": "https://xesque.rocketseat.dev/platform/tech/python.svg",
+    "name": "Python",
     "ability": 30,
-    "experience":30,
-    "code":70,
-    "projects":4,
-    "status":2
+    "experience": 30,
+    "code": 70,
+    "projects": 4,
+    "status": 2
   }
 ]

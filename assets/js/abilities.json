@@ -1,32 +1,32 @@
 [
-    {
-        "icon": "<i class='fas fa-code'></i>",
-        "name": "Boas Práticas",
-        "description": "Em Todos meus projetos, não importa a linguagem, sigo as normas de boas práticas de programação.<br><br>O maior problema não é desenvolver algo, e sim oferecer manutenção ou alteração a ele, para isso é importante que tenha sido desenvolvido seguindo boas práticas!"
-    },
-    {
-        "icon": "<i class='fas fa-hourglass-half'></i>",
-        "name": "Experiência",
-        "description": "Trabalho desde meus 17 anos moldando sites e com desenvolvimento de software.<br><br>Profissionalmente trabalhei por 2 anos como Desenvolvedor FullStack para uma empresa, mas prefiro dedicar minhas habilidades como trabalhador Freelancer."
-    },
-    {
-        "icon": "<i class='fas fa-fire'></i>",
-        "name": "Habilidade",
-        "description": "Posso programar de acordo com a linguagem desejada.<br><br>Naturalmente terei mais afinidade com algumas mais do que com outras, mas, como pode-se ser visto na aba Linguagens, estou em aprendizado constante sempre tentando ampliar minha Stack."
-    },
-    {
-        "icon": "<i class='fas fa-funnel-dollar'></i>",
-        "name": "Preço",
-        "description": "Sempre busco o preço mais justo de acordo com o que é pedido.<br><br>Deixo bem claro quais são meus pontos fortes e quais ainda estou desenvolvendo, o preço é moldado levando isso em consideração também, não apenas o projeto e tempo de finalização."
-    },
-    {
-        "icon": "<i class='fas fa-bezier-curve'></i>",
-        "name": "UX/UI Design",
-        "description": "Para um projeto ser bem sucedido não basta apenas que funcione. É necessário também, entender o lado do usuário.<br><br>Realizei diversos curso de UX/UI Design afim de aprimorar as minhas noções e aprender mais sobre. Levo essa bagagem comigo seja qual for a stack ou projeto."
-    },
-    {
-        "icon": "<i class='fas fa-user-graduate'></i>",
-        "name": "Formação",
-        "description": "Estou no último semestre de Analise e Desenvolvimento de sistemas no Instituto Federal de São Paulo.<br><br>Fiz cursos de UX/UI Design na renomada EBAC, fora diversos cursos que podem ser vistos na aba Cursos"
-    }
+  {
+    "icon": "<i class='fas fa-code'></i>",
+    "name": "Boas Práticas",
+    "description": "Em Todos meus projetos, seja qual a linguagem, sigo as normas de boas práticas de programação.<br><br>O maior problema não é desenvolver algo, e sim oferecer manutenção ou alteração a ele, para isso é importante que tenha sido desenvolvido seguindo boas práticas!"
+  },
+  {
+    "icon": "<i class='fas fa-hourglass-half'></i>",
+    "name": "Experiência",
+    "description": "Trabalho desde meus 17 anos moldando sites e com desenvolvimento de software.<br><br>Profissionalmente trabalhei por 2 anos como desenvolvedor Full-Stack e atualmente estou numa grande empresa do mercado financeiro onde trabalho com linguagens de ponta."
+  },
+  {
+    "icon": "<i class='fas fa-fire'></i>",
+    "name": "Habilidade",
+    "description": "Posso programar de acordo com a linguagem desejada.<br><br>Naturalmente terei mais afinidade com algumas mais do que com outras, mas, como pode-se ser visto na aba Linguagens, estou em aprendizado constante sempre tentando ampliar minha Stack."
+  },
+  {
+    "icon": "<i class='fas fa-funnel-dollar'></i>",
+    "name": "Preço",
+    "description": "Sempre busco o preço mais justo de acordo com o que é pedido.<br><br>Deixo bem claro quais são meus pontos fortes e quais ainda estou desenvolvendo, o preço é moldado levando isso em consideração também, não apenas o projeto e tempo de finalização."
+  },
+  {
+    "icon": "<i class='fas fa-bezier-curve'></i>",
+    "name": "UX/UI Design",
+    "description": "Para um projeto ser bem sucedido não basta apenas que funcione. É necessário também, entender o lado do usuário.<br><br>Realizei diversos curso de UX/UI Design afim de aprimorar as minhas noções e aprender mais sobre. Levo essa bagagem comigo seja qual for a stack ou projeto."
+  },
+  {
+    "icon": "<i class='fas fa-user-graduate'></i>",
+    "name": "Formação",
+    "description": "Sou graduado pelo Instituto Federal de São Paulo em Análise e desenvolvimento de sistemas.<br><br>Possuo também, diversos certificados, desde IBM até alguns mais focados em UX/UI. A lista completa se encontra na aba cursos. "
+  }
 ]
